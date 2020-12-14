@@ -1,0 +1,287 @@
+body{
+    background-color: whitesmoke;
+}
+
+div {
+    padding: 10px 10px;
+    margin: 5%;
+    /*background-color: #AFBFCD;*/
+    background-image: linear-gradient(rgba(255,0,0,0), #AFBFCD);
+    overflow: auto;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+nav{
+    margin: 5%;
+}
+
+hr{
+    border-top: 1px dotted #8c8b8b;
+    margin: 5%;
+}
+
+img.ProfilePicture{
+    padding: 30px;
+    padding-top: 20px;
+    margin: auto;
+    width: 230px;
+    float: left;
+}
+
+.AboutMe, .Education, .Experience, .Hobbies, .Skills h2{
+    text-align: center;
+}
+
+.BasicInformation, .AboutMe, .Education, .Skills, .Hobbies{
+    font-size: 140%;
+}
+
+div.Experience h2{
+
+    font-size: 230%;
+}
+
+.LanguagesSkills, .ProgrammingSkills{
+    width: 38%;
+    height: 300px;
+    display: inline-block;
+    float: top;
+    overflow: auto;
+    background-image: none;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    border-radius: 5px;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 12px;
+    text-align: center;
+    font-size: 120%;
+    margin: 30px auto;
+}
+
+h1,h2,h3,h4,h5,p,li,th,td,label{
+    font-family: "Agency FB", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+ul.TopMenu{
+    list-style-type: none;
+    text-align: center;
+    opacity: 0.9;
+    background-color: #C2D3CD;
+    /*background-image: #C2D3CD;*/
+    padding: 20px;
+}
+
+ul.TopMenu li{
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 120%;
+
+}
+
+ul.TopMenu li:hover{
+    background-image: radial-gradient(#AFBFC0, #C2D3CD);
+}
+
+ul.TopMenu li:hover .TopSubmenu{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+ul.TopMenu a{
+    color: black;
+    text-decoration: none;
+}
+
+ul.TopSubmenu{
+    position: absolute;
+    opacity: 0;
+    list-style-type: none;
+    background-image: radial-gradient(#AFBFC0, #C2D3CD);
+    padding-left: 0;
+    margin-left: -20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+ul.TopSubmenu li:hover{
+    background-image: radial-gradient(#909e99,#AFBFC0);
+    /*background-color: #AFBFCD;*/
+   /* margin: auto;*/
+    border-radius: 10px;
+    visibility: visible;
+    display: block;
+}
+
+footer{
+    padding: 0;
+    margin: 5%;
+    background-color: #AFBFCF;
+    overflow: auto;
+    border-radius: 5px;
+    font-size: 130%;
+}
+
+div.FooterLeftColumn{
+    float: left;
+    padding: 0;
+    width: 25%;
+}
+
+div.FooterMiddleColumn{
+    float: left;
+    padding: 0;
+    width: 25%;
+}
+
+div.FooterRightColumn{
+    float: left;
+    padding: 0;
+    width: 20%;
+}
+
+/* CSS for contactme.html*/
+
+form {
+    padding: 30px;
+    margin: auto;
+    font-size: 110%;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: #C2D3CD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #909e99;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 100; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #AFBFCD; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 19px; /* Increase font size */
+    font-family: "Agency FB", sans-serif;
+}
+
+#myBtn:hover {
+    background-color: #C2D3CD; /* Add a dark-grey background on hover */
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: auto;
+    padding: 16px;
+    margin-top: -35%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0px;
+    margin: 0;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 250px;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
