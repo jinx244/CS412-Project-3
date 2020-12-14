@@ -216,18 +216,6 @@ input[type=submit]:hover {
     background-color: #C2D3CD; /* Add a dark-grey background on hover */
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-div.container {
-    position: relative;
-    padding: 0; !important
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    padding: 0;
-}
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
@@ -237,10 +225,12 @@ div.container {
 .prev,.next {
     cursor: pointer;
     position: absolute;
-    top: 27%;
+    top: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: -35%;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -263,24 +253,35 @@ div.container {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0px;
+    margin: 0;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 250px;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* four columns side by side */
-.column {
-    float: left;
-    width: 25%;
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
