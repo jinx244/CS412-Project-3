@@ -16,7 +16,7 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -52,4 +52,11 @@ function showSlides(n)
     preview[slideIndex-1].className += " active";
     captionText.innerHTML =preview[slideIndex-1].alt;
 
+}*/
+
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
 }
