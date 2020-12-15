@@ -195,6 +195,8 @@ input[type=submit]:hover {
     background-color: #909e99;
 }
 
+
+/*CSS for TOP button*/
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -216,26 +218,49 @@ input[type=submit]:hover {
     background-color: #C2D3CD; /* Add a dark-grey background on hover */
 }
 
+/* CSS for image gallery */
+
+.photos {
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 300%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev,.next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
-    top: 80%;
-    margin-left: 7%;
-    margin-right: 7%;
+    top: 40%;
     width: auto;
     padding: 16px;
-    margin-top: -35%;
+    margin-top: -10px;
     color: white;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -243,45 +268,40 @@ input[type=submit]:hover {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
+
+/* Position the "prev button" to the left */
 .prev {
-    left: 0;
+    left: -0px;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 20%;
-    padding: 0px;
-    margin: 0;
-}
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8;
-    cursor: pointer;
-    width: 250px;
-}
-
-.column img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-    margin-bottom: 0;
-    padding-bottom: 0;
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    padding: 0px;
+    margin: 0;
+    border-radius: 0;
 }
 
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
