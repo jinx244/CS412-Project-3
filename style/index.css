@@ -90,6 +90,8 @@ ul.TopMenu{
     background-color: #C2D3CD;
     /*background-image: #C2D3CD;*/
     padding: 20px;
+    z-index: 10;
+    position: relative;
 }
 
 ul.TopMenu li{
@@ -247,8 +249,7 @@ input[type=submit]:hover {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 40%;
